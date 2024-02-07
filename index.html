@@ -11,39 +11,45 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone"></script>
     <script type="text/babel">
-        // React Components and ReactDOM rendering code will go here
-        // Import the components
-const Home = () => {
-  return (
-    <div className="home">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Reserve your table online and enjoy an unforgettable dining experience.</p>
-    </div>
-  );
-};
 
-const MenuSelection = () => {
-  return (
-    <div className="menuSelection">
-      <h2>Select Your Menu</h2>
-      <p>Choose from our diverse selection of dishes to customize your dining experience.</p>
-    </div>
-  );
-};
+        // Navigation Function
+        const navigate = (page) => {
+          ReactDOM.render(page === 'home' ? <App /> : <MenuSelection />, document.getElementById('root'));
+        };
 
-// Application Component
-const App = () => {
-  return (
-    <div>
-      <Home />
-      <MenuSelection />
-    </div>
-  );
-};
+        // Home Component
+        const Home = () => {
+          return (
+            <div style={{ backgroundColor: 'orange', color: 'black', padding: '20px', textAlign: 'center' }}>
+              <h1>Welcome to Our Restaurant</h1>
+              <p>Reserve your table online and enjoy an unforgettable dining experience.</p>
+              <button onClick={() => navigate('menu')} style={{ backgroundColor: 'yellow', color: 'black', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
+                View Menu
+              </button>
+            </div>
+          );
+        };
 
-// Render the App
-ReactDOM.render(<App />, document.getElementById('root'));
+        // MenuSelection Component
+        const MenuSelection = () => {
+          return (
+            <div style={{ backgroundColor: 'yellow', color: 'black', padding: '20px', textAlign: 'center' }}>
+              <h2>Select Your Menu</h2>
+              <p>Choose from our diverse selection of dishes to customize your dining experience.</p>
+              <button onClick={() => navigate('home')} style={{ backgroundColor: 'orange', color: 'black', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
+                Back to Home
+              </button>
+            </div>
+          );
+        };
 
+        // Application Component
+        const App = () => {
+          return <Home />;
+        };
+
+        // Initial Render
+        navigate('home');
     </script>
 </body>
 </html>
