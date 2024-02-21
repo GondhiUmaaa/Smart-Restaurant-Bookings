@@ -42,7 +42,7 @@ const Header = () => {
               <li>About Us</li>
               <li>Menu</li>
               <li>Reviews</li>
-              <li>Blog</li>
+              <li>Blogs</li>
               <li>Contacts</li>
             </ul>
           </nav>
