@@ -30,7 +30,7 @@ const Slider = () => {
       <div className="container">
         <div className="texts">
           <h1>
-            Unleashing the Flavors of Freshness, Served Daily Here{" "}
+          "Dine smarter, not harder. AI finds your perfect table,fast"{" "}
             <span>
               <img src={heartEye} alt="" />
             </span>
