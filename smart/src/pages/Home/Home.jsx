@@ -8,6 +8,7 @@ import Slider from "../../components/Home/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
 
 import "./Home.scss";
+import "./Home.css";
 
 const Home = () => {
   return (
