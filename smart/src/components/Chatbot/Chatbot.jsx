@@ -1,3 +1,5 @@
+import "./Chatbot.scss";
+
 const Chatbot = () => { 
     return(<>
             <div className="sticky">
