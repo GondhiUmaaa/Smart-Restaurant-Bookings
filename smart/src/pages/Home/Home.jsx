@@ -10,6 +10,7 @@ import Chatbot from "../../components/Chatbot/Chatbot";
 
 
 import "./Home.scss";
+import Testimonials from "../../components/Home/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <About />
       <Menu />
       <Reservation />
+      <Testimonials />
       <Footer />
     </div>
   );
