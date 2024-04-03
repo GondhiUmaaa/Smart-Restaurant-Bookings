@@ -36,7 +36,7 @@ const Header = () => {
         <div className="logo">
           <img src={DefaultLogo} alt="default-logo" />
         </div>
-        <div className="menu flex flex-row">
+        <div className="menu">
           <nav>
             <ul>
               <li>About Us</li>
