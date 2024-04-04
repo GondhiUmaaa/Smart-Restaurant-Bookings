@@ -19,7 +19,7 @@ const Chatbot = () => {
             src="https://www.chatbase.co/chatbot-iframe/N2A3zC0z-fuu0gahC8Web"
             title="Chatbot"
             width="100%"
-            style="height: 100%; min-height: 700px"
+            // style="height: 100%; min-height: 700px"
             frameborder="0"
             ></iframe>
             <button className="close-button" onClick={() => setIsOpen(false)}>x</button>
