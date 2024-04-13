@@ -24,7 +24,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="slider">
+    <div id="Slider" className="slider">
       <img className="bgPattern1" src={bgPatter1} alt="bgPattern1" />
       <img className="bgPattern2" src={bgPatter2} alt="bgPattern2" />
       <div className="container">

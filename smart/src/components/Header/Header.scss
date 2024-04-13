@@ -2,7 +2,7 @@
 @import "../../assets/styles/main.scss";
 
 header {
-  padding: 30px 0;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   transition: $transition-default;
@@ -38,8 +38,9 @@ header {
         @media (max-width: $container-sm) {
           display: none;
         }
-        li {
+        li a {
           color: $secondary-color;
+          text-decoration: none;
           cursor: pointer;
           font-size: $text-xl;
           transition: $transition-default;

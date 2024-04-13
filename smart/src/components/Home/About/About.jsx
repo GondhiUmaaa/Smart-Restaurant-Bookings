@@ -9,7 +9,7 @@ import allTime from "../../../assets/images/about/icons/724.svg"
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="About" className="about">
         <div className="container">
             <div className="image">
                 <img src={Cheff} alt="cheff" />

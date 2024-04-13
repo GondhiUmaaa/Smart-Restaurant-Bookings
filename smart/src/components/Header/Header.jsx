@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import "./Header.scss";
 
 import DefaultLogo from "../../assets/images/logos/logoDefault.png";
-import Cart from "../../assets/icons/cart.svg";
-import Menu from "../../assets/icons/menu.svg";
 import classNames from "classnames";
 import { Modal } from "../Modals/Modal";
 
@@ -33,26 +31,21 @@ const Header = () => {
       {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
 
       <div className="container">
-        <div className="logo">
-          <img src={DefaultLogo} alt="default-logo" />
-        </div>
+        <a href="#Slider">
+          <div className="logo">
+            <img src={DefaultLogo} alt="default-logo" />
+          </div>
+        </a>
         <div className="menu">
           <nav>
             <ul>
-              <li>About Us</li>
-              <li>Menu</li>
-              <li>Reviews</li>
-              <li>Blogs</li>
-              <li>Contacts</li>
+              <li><a href="#About">About Us</a></li>
+              <li><a href="#Populardishes">Popular dishes</a></li>
+              <li><a href="#Menu">Menu</a></li>
+              <li><a href="#Testimonials">Testimonials</a></li>
             </ul>
           </nav>
           <div className="buttons">
-            <button className="button-secondary">
-              <img src={Cart} alt="" />
-            </button>
-            <button className="button-menu">
-              <img src={Menu} alt="" />
-            </button>
             <button className="button-primary" onClick={() => setShowModal(true)}>
               Reserve Table
             </button>

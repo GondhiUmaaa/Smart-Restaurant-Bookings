@@ -2,7 +2,7 @@ import "./Testimonial.scss";
 
 const Testimonial = () => {
     return (
-      <div>
+      <div id="Testimonials">
         <div className="testimonials-container">
             <div className="content-wrapper">
                 <div className="header-section">

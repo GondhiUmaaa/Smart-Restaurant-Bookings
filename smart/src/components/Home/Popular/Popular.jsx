@@ -24,7 +24,7 @@ const Popular = () => {
   }, []);
 
   return (
-    <div className="popular">
+    <div id="Populardishes" className="popular">
       <div className="container">
         <div className="head">
           <h2>Popular Dishes</h2>
@@ -64,7 +64,6 @@ const Popular = () => {
                 </div>
                 <div className="footer">
                   <span className="price">${item.price}</span>
-                  <button>Add To Cart</button>
                 </div>
               </div>
             ))}

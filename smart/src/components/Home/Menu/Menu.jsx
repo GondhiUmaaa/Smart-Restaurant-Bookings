@@ -7,7 +7,7 @@ import star from "../../../assets/icons/star.svg";
 
 const Menu = () => {
   return (
-    <div className='our-menu'>
+    <div id='Menu' className='our-menu'>
         <div className="container">
             <div className="title">
                 <h1>Our Regular Menu Pack</h1>

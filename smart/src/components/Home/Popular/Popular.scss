@@ -134,18 +134,13 @@
         .footer {
           align-items: center;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           margin-bottom: 1rem;
           margin-top: 3.5rem;
           .price {
             color: $primary-text-color;
             font-family: $title-font;
             font-size: $text-5xl;
-          }
-          button {
-            @include button(secondary, md);
-            font-weight: 700;
-            padding: 22px 24px;
           }
         }
       }
