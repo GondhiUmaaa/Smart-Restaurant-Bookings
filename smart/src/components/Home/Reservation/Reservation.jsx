@@ -1,11 +1,16 @@
 import React from "react";
+import { useState } from "react";
 
 import "./Reservation.scss";
 
 import ReservationImage from "../../../assets/images/reservation/reservation.png";
+import { Modal } from "../../Modals/Modal";
 
 const Reservation = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
+    
     <div className="reservation">
       <div className="container">
         <div className="info">
@@ -15,7 +20,9 @@ const Reservation = () => {
             earn points towards free meals. OpenTable is a real-time online
             reservation.
           </p>
-          <button>Make Reservation</button>
+          <button onClick={() => setShowModal(true)}>Make Reservation</button>
+          {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
+
         </div>
         <div className="image">
           <img src={ReservationImage} alt="" />
