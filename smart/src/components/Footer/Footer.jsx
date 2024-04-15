@@ -3,12 +3,7 @@ import React from "react";
 import "./Footer.scss";
 
 import Logo from "../../assets/images/logos/logoDefault.png";
-import Arrow from "../../assets/icons/arrow.svg";
 
-import facebook from "../../assets/icons/footer/facebook.svg";
-import instagram from "../../assets/icons/footer/instagram.svg";
-import twitter from "../../assets/icons/footer/twitter.svg";
-import youtube from "../../assets/icons/footer/youtube.svg";
 
 import { footerMenu } from "../../data";
 
