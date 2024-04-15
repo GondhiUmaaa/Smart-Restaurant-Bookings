@@ -7,6 +7,16 @@ import { tables } from "../../data";
 import classNames from "classnames";
 
 export const Modal = ({ showModal, setShowModal }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const [userCount, setUserCount] = useState(1);
 
   const [selectedTable, setSelectedTable] = useState(null);
@@ -228,8 +238,18 @@ export const Modal = ({ showModal, setShowModal }) => {
               </div>
             </div>
 
-            <div className="make-reservation">
-              <button>Make Reservation</button>
+            <div className="make-reservation" >
+              <button onClick={handleButtonClick}>Make Reservation</button>
+              {isModalOpen && (
+                <div className="modal-reservation">
+                  <div className="modal-content-reservation">
+                    <p>Successful Reservation!</p>
+                    <button className="cancel-button-reservation" onClick={handleCloseModal}>
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
