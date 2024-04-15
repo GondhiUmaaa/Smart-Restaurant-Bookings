@@ -20,31 +20,6 @@ const Footer = () => {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="content">
-          <div className="newsletter">
-            <h2>Subscribe Our Newsletter</h2>
-
-            <div className="subscribe">
-              <input type="text" placeholder="Enter your email" />
-              <button>
-                <img src={Arrow} alt="Arrow" />
-              </button>
-            </div>
-
-            <div className="social">
-              <button>
-                <img src={facebook} alt="facebook" />
-              </button>
-              <button>
-                <img src={instagram} alt="instagram" />
-              </button>
-              <button>
-                <img src={twitter} alt="twitter" />
-              </button>
-              <button>
-                <img src={youtube} alt="youtube" />
-              </button>
-            </div>
-          </div>
           <div className="menu">
             {footerMenu.map((item, index) => (
               <div className="menu-item" key={index}>

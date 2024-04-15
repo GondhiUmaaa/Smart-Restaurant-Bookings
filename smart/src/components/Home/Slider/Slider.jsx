@@ -40,15 +40,7 @@ const Slider = () => {
             in addition to light refreshment such as baked good or snacks. The
             term comes from the french word meaning food.
           </p>
-          <div className="buttons">
-            <button className="button-primary">Explore Food</button>
-            <button className="button-tertiary">
-              <span>
-                <img src={searchIcon} alt="" />
-              </span>
-              Search
-            </button>
-          </div>
+          
         </div>
 
         <div className="slide">

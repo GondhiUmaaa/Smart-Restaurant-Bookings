@@ -47,7 +47,6 @@ const About = () => {
                         </li>
                     </ul>
 
-                    <button>About Us</button>
             </div>
         </div>
     </div>
