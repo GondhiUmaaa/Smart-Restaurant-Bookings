@@ -39,7 +39,6 @@ const Menu = () => {
              </div>
              <div className="footer">
                <span className="price">${item.price}</span>
-               <button>Add To Cart</button>
              </div>
            </div>
             ))}
@@ -62,7 +61,6 @@ const Menu = () => {
              </div>
              <div className="footer">
                <span className="price">${item.price}</span>
-               <button>Add To Cart</button>
              </div>
            </div>
             ))}
