@@ -244,7 +244,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <div className="modal-reservation">
                   <div className="modal-content-reservation">
                     <p>Successful Reservation!</p>
-                    <p>Sent to your email</p>
+                    <p style={{ color: 'blue', fontSize: '14px' }}>Sent to your email</p> {/* Adding fontSize */}
                     <button className="cancel-button-reservation" onClick={handleCloseModal}>
                       Close
                     </button>
