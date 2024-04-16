@@ -15,8 +15,8 @@ const Chatbot = () => {
       {isOpen && (
         <div className="modal-backdrop">
           <div className="modal-content">
-          <iframe
-            src="https://www.chatbase.co/chatbot-iframe/N2A3zC0z-fuu0gahC8Web"
+            <iframe
+            src="https://www.chatbase.co/chatbot-iframe/y-KlnZSZLoV39G_tcIQDQ"
             title="Chatbot"
             width="100%"
             // style="height: 100%; min-height: 700px"
